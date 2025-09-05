@@ -1,0 +1,9 @@
+bittensor
+scikit-learn==1.6.*
+joblib==1.4.*
+substrate-interface==1.7.11
+sqlalchemy
+redis
+asyncpg
+wandb
+greenlet

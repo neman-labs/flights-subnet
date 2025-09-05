@@ -1,0 +1,9 @@
+FROM alpine:3.21
+
+RUN apk add --no-cache curl bash
+
+ADD https://github.com/amacneil/dbmate/releases/download/v1.6.0/dbmate-linux-musl-amd64 /usr/local/bin/dbmate
+RUN chmod +x /usr/local/bin/dbmate
+
+COPY . /app
+WORKDIR /app
